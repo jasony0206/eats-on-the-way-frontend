@@ -14,6 +14,43 @@
     <div id="content"></div>
     <script type="text/babel" src="scripts/example.js"></script>
     <script type="text/babel">
+      var data = [
+        {name: "Restaurant 1", rating: "4.5", review_count: 80},
+        {name: "Restaurant 2", rating: "4.0", review_count: 30}
+      ];
+
+      var RestaurantPanel = React.createClass({
+        render: function() {
+          return (
+            <div className="restaurantPanel">
+              <h4 className="restaurantName">{this.props.name}</h4>
+              <p>{this.props.rating}</p>
+            </div>
+          );
+        }
+      });
+
+      var RestaurantList = React.createClass({
+        render: function() {
+          var restaurantNodes = this.props.data.map(function(restaurant){
+            return (
+              <RestaurantPanel name={restaurant.name} rating={restaurant.rating}>
+              </RestaurantPanel>
+            );
+          });
+
+          return(
+            <div className="restaurantList">
+              {restaurantNodes}
+            </div>
+          );
+        }
+      });
+
+      ReactDOM.render(
+        <RestaurantList data={data}/>,
+        document.getElementById('content')
+      );
     </script>
   </body>
 </html>
