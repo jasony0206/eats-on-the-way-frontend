@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Eats On The Way</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="data_box.css" rel="stylesheet">
     <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
     <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
     <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
@@ -12,7 +13,7 @@
     <script src="https://npmcdn.com/remarkable@1.6.2/dist/remarkable.min.js"></script>
   </head>
   <body>
-    <div id="content"></div>
+    <div id="data-box"></div>
     <script type="text/javascript" src="json_response.js"></script>
     <script type="text/babel">
       var data = JSON.parse(jsonResponse).data;
@@ -56,7 +57,20 @@
         render: function() {
           return(
             <div className="searchBox">
-              <p> Im a search box </p>
+              <form className="form-horizontal">
+                <div className="form-group">
+                  <label htmlFor="originInput" className="col-sm-3 control-label">Origin</label>
+                  <div className="col-sm-9">
+                    <input type="text" className="form-control" id="originInput" placeholder="Disneyland"/>
+                  </div>
+                </div>
+                <div className="form-group">
+                  <label htmlFor="destinationInput" className="col-sm-3 control-label">Destination</label>
+                  <div className="col-sm-9">
+                    <input type="password" className="form-control" id="destinationInput" placeholder="Universal Studios"/>
+                  </div>
+                </div>
+              </form>
             </div>
           );
         }
@@ -75,7 +89,7 @@
 
       ReactDOM.render(
         <DataBox data={data}/>,
-        document.getElementById('content')
+        document.getElementById('data-box')
       );
     </script>
   </body>
