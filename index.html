@@ -52,8 +52,29 @@
         }
       });
 
+      var SearchBox = React.createClass({
+        render: function() {
+          return(
+            <div className="searchBox">
+              <p> Im a search box </p>
+            </div>
+          );
+        }
+      });
+
+      var DataBox = React.createClass({
+        render: function() {
+          return(
+            <div className="dataBox">
+              <SearchBox />
+              <RestaurantList data={this.props.data}/>
+            </div>
+          );
+        }
+      })
+
       ReactDOM.render(
-        <RestaurantList data={data}/>,
+        <DataBox data={data}/>,
         document.getElementById('content')
       );
     </script>
