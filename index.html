@@ -22,7 +22,10 @@
           return (
             <div className="restaurantPanel panel">
               <p className="restaurantName">{this.props.name}</p>
-              <p>{this.props.rating}</p>
+              <p>{this.props.rating} stars</p>
+              <p>{this.props.review_count} reviews</p>
+              <p>{this.props.total_travel.duration.text}</p>
+              <p>{this.props.total_travel.distance.text}</p>
             </div>
           );
         }
@@ -32,7 +35,11 @@
         render: function() {
           var restaurantNodes = this.props.data.map(function(restaurant){
             return (
-              <RestaurantPanel key={restaurant.name} name={restaurant.name} rating={restaurant.rating}>
+              <RestaurantPanel key={restaurant.name}
+                               name={restaurant.name}
+                               rating={restaurant.rating}
+                               review_count={restaurant.review_count}
+                               total_travel={restaurant.total_travel}>
               </RestaurantPanel>
             );
           });
