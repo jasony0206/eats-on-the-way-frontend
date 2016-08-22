@@ -23,11 +23,17 @@
         render: function() {
           return (
             <div className="restaurantPanel panel">
-              <p className="restaurantName">{this.props.name}</p>
-              <p>{this.props.rating} stars</p>
-              <p>{this.props.review_count} reviews</p>
-              <p>{this.props.total_travel.duration.text}</p>
-              <p>{this.props.total_travel.distance.text}</p>
+              <h5 className="restaurantName"><strong>{this.props.name}</strong></h5>
+              <div className="row">
+                <div className="col-sm-6 yelp-ratings">
+                  <p>{this.props.rating} stars</p>
+                  <p className="text-muted">{this.props.review_count} reviews</p>
+                </div>
+                <div className="col-sm-6 travel-summary">
+                  <p>{this.props.total_travel.duration.text}</p>
+                  <p className="text-muted">{this.props.total_travel.distance.text}</p>
+                </div>
+              </div>
             </div>
           );
         }
