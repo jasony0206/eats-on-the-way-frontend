@@ -22,7 +22,7 @@
       var RestaurantPanel = React.createClass({
         render: function() {
           return (
-            <div className="restaurantPanel panel">
+            <div className="restaurantPanel panel panel-default">
               <h5 className="restaurantName"><strong>{this.props.name}</strong></h5>
               <div className="row">
                 <div className="col-sm-6 yelp-ratings">
@@ -63,7 +63,7 @@
       var SearchBox = React.createClass({
         render: function() {
           return(
-            <div className="searchBox panel">
+            <div className="searchBox panel panel-default">
               <form className="form-horizontal">
                 <div className="form-group">
                   <label htmlFor="originInput" className="col-sm-3 control-label">Origin</label>

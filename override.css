@@ -2,3 +2,7 @@
   border-radius: 0px;
   margin-bottom: 0px;
 }
+
+.restaurantList .panel-default {
+  border-top: none;
+}
