@@ -6,6 +6,9 @@
   padding-top: 15px;
   padding-left: 25px;
   padding-right: 25px;
+  position: fixed;
+  width: inherit;
+  height: 115px;
 }
 
 .restaurantPanel {
@@ -21,4 +24,12 @@
 
 .searchBox .control-label {
   text-align: left;
+}
+
+.restaurantList {
+  position: fixed;
+  width: inherit;
+  top: 115px;
+  bottom: 0px;
+  overflow-y: auto;
 }
