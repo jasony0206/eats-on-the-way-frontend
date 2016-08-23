@@ -4,15 +4,21 @@
 
 .searchBox {
   padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .restaurantPanel {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 25px;
-  margin-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .travel-summary {
   text-align: right;
+}
+
+.searchBox .control-label {
+  text-align: left;
 }
