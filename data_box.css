@@ -9,6 +9,8 @@
   position: fixed;
   width: inherit;
   height: 115px;
+  background-color: #448AFF;
+  color: white;
 }
 
 .restaurantPanel {
