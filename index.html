@@ -17,10 +17,12 @@
     <div id="data-box"></div>
     <script type="text/javascript" src="json_response.js"></script>
     <script type="text/babel">
-      var data = JSON.parse(jsonResponse).data;
+      var data = JSON.parse(jsonResponse).restaurants;
 
       var RestaurantPanel = React.createClass({
         render: function() {
+          var categories = this.props.categories.join(', ');
+
           return (
             <div className="restaurantPanel panel panel-default">
               <h5 className="restaurantName"><strong>{this.props.name}</strong></h5>
@@ -28,8 +30,8 @@
                 <div className="col-sm-6 yelp-summary">
                   <p>{this.props.rating} stars&nbsp;&nbsp;
                   <span className="text-muted">{this.props.review_count} reviews</span></p>
-                  <p>Coffee & Tea</p>
-                  <a href="#"><img src="assets/yelp_btn/Web/yelp_review_btn_light.png"/></a>
+                  <p>{categories}</p>
+                  <a href={this.props.url}><img src="assets/yelp_btn/Web/yelp_review_btn_light.png"/></a>
                 </div>
                 <div className="col-sm-6 travel-summary">
                   <p><strong>{this.props.total_travel.duration.text}</strong>&nbsp;&nbsp;
@@ -51,6 +53,8 @@
                                name={restaurant.name}
                                rating={restaurant.rating}
                                review_count={restaurant.review_count}
+                               categories={restaurant.categories}
+                               url={restaurant.url}
                                total_travel={restaurant.total_travel}
                                to_restaurant={restaurant.to_restaurant}
                                from_restaurant={restaurant.from_restaurant}>
