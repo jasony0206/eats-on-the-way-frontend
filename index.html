@@ -28,7 +28,7 @@
               <h5 className="restaurantName"><strong>{this.props.name}</strong></h5>
               <div className="row">
                 <div className="col-sm-6 yelp-summary">
-                  <p>{this.props.rating} stars&nbsp;&nbsp;
+                  <p><img src={this.props.rating_img_url}/>&nbsp;&nbsp;
                   <span className="text-muted">{this.props.review_count} reviews</span></p>
                   <p>{categories}</p>
                   <a href={this.props.url}><img src="assets/yelp_btn/Web/yelp_review_btn_light.png"/></a>
@@ -55,6 +55,7 @@
                                review_count={restaurant.review_count}
                                categories={restaurant.categories}
                                url={restaurant.url}
+                               rating_img_url={restaurant.rating_img_url}
                                total_travel={restaurant.total_travel}
                                to_restaurant={restaurant.to_restaurant}
                                from_restaurant={restaurant.from_restaurant}>
