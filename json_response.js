@@ -15,6 +15,7 @@ jsonResponse =
       "rating": 5,
       "review_count": 39,
       "url": "http://www.yelp.com/biz/tacos-la-bomba-norwalk?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
       "categories": [
         "Street Vendors",
         "Mexican"
@@ -59,6 +60,7 @@ jsonResponse =
       "rating": 5,
       "review_count": 26,
       "url": "http://www.yelp.com/biz/grilled-fraiche-los-angeles?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
       "categories": [
         "Food Trucks",
         "Caribbean"
@@ -103,6 +105,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 1208,
       "url": "http://www.yelp.com/biz/napa-rose-anaheim?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "American (New)"
       ],
@@ -146,6 +149,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 1178,
       "url": "http://www.yelp.com/biz/joes-falafel-los-angeles?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Mediterranean"
       ],
@@ -189,6 +193,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 960,
       "url": "http://www.yelp.com/biz/the-pizza-press-anaheim?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Pizza",
         "Salad",
@@ -234,6 +239,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 883,
       "url": "http://www.yelp.com/biz/tacos-baja-ensenada-los-angeles-2?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Mexican"
       ],
@@ -277,6 +283,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 844,
       "url": "http://www.yelp.com/biz/tiki-juice-bar-anaheim?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Juice Bars & Smoothies",
         "American (Traditional)",
@@ -322,6 +329,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 806,
       "url": "http://www.yelp.com/biz/club-33-anaheim-3?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "French",
         "Lounges",
@@ -367,6 +375,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 792,
       "url": "http://www.yelp.com/biz/the-blind-rabbit-anaheim?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "American (Traditional)",
         "Cocktail Bars"
@@ -411,6 +420,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 749,
       "url": "http://www.yelp.com/biz/hoy-ka-thai-noodles-los-angeles?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Thai",
         "Noodles"
@@ -455,6 +465,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 743,
       "url": "http://www.yelp.com/biz/chibiscus-los-angeles?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Asian Fusion",
         "Ramen"
@@ -499,6 +510,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 733,
       "url": "http://www.yelp.com/biz/little-red-wagon-anaheim?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Hot Dogs",
         "American (Traditional)",
@@ -544,6 +556,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 412,
       "url": "http://www.yelp.com/biz/mariscos-jalisco-los-angeles-3?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Mexican",
         "Food Stands",
@@ -589,6 +602,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 397,
       "url": "http://www.yelp.com/biz/corn-dog-castle-anaheim?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Hot Dogs"
       ],
@@ -632,6 +646,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 349,
       "url": "http://www.yelp.com/biz/the-carving-board-los-angeles?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Sandwiches"
       ],
@@ -675,6 +690,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 339,
       "url": "http://www.yelp.com/biz/pho-45-la-mirada?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Vietnamese",
         "Soup"
@@ -719,6 +735,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 333,
       "url": "http://www.yelp.com/biz/cream-and-sugar-cafe-la-mirada?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Coffee & Tea",
         "American (New)"
@@ -763,6 +780,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 319,
       "url": "http://www.yelp.com/biz/los-cinco-puntos-los-angeles?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Delis",
         "Meat Shops",
@@ -808,6 +826,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 303,
       "url": "http://www.yelp.com/biz/ball-and-chain-los-angeles?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Bars",
         "American (New)"
@@ -852,6 +871,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 241,
       "url": "http://www.yelp.com/biz/veggie-house-los-angeles-2?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Vegan"
       ],
@@ -895,6 +915,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 241,
       "url": "http://www.yelp.com/biz/sandwich-cafe-santa-fe-springs?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Sandwiches"
       ],
@@ -938,6 +959,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 227,
       "url": "http://www.yelp.com/biz/brewberry-cafe-anaheim-7?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Ice Cream & Frozen Yogurt",
         "Breakfast & Brunch",
@@ -983,6 +1005,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 208,
       "url": "http://www.yelp.com/biz/philly-fusion-la-mirada?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "American (Traditional)",
         "Cheesesteaks",
@@ -1028,6 +1051,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 207,
       "url": "http://www.yelp.com/biz/running-goose-los-angeles?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Tapas/Small Plates",
         "Burgers",
@@ -1073,6 +1097,7 @@ jsonResponse =
       "rating": 4.5,
       "review_count": 198,
       "url": "http://www.yelp.com/biz/vaka-burger-express-los-angeles?adjust_creative=mebg3zropBL-hUoFm0UUxg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=mebg3zropBL-hUoFm0UUxg",
+      "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
       "categories": [
         "Burgers"
       ],
