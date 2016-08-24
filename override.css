@@ -7,3 +7,7 @@
 .restaurantList .panel-default {
   border-top: none;
 }
+
+a:hover {
+  text-decoration: none;
+}
