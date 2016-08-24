@@ -6,6 +6,7 @@
     <title>Eats On The Way</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="data_box.css" rel="stylesheet">
+    <link href="map.css" rel="stylesheet">
     <link href="override.css" rel="stylesheet">
     <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
     <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
@@ -15,6 +16,7 @@
   </head>
   <body>
     <div id="data-box"></div>
+    <section id="map" class=""></section>
     <script type="text/javascript" src="json_response.js"></script>
     <script type="text/babel">
       var data = JSON.parse(jsonResponse).restaurants;
@@ -110,5 +112,8 @@
         document.getElementById('data-box')
       );
     </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5K8PEIVxny-BofWrL_soM4DCIFACRY3Y&signed_in=true&callback=initializeMap"></script>
+    <script src="map.js"></script>
   </body>
 </html>
