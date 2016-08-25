@@ -1,5 +1,3 @@
-var jsonResponse = 
-`
 {
   "start_location": {
     "lat": 33.8098177,
@@ -1138,4 +1136,3 @@ var jsonResponse =
     }
   ]
 }
-`;
