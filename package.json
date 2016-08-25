@@ -1,0 +1,27 @@
+{
+  "name": "eats-on-the-way-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "json_response.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasony0206/eats-on-the-way-frontend.git"
+  },
+  "author": "Jason Yoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasony0206/eats-on-the-way-frontend/issues"
+  },
+  "homepage": "https://github.com/jasony0206/eats-on-the-way-frontend#readme",
+  "dependencies": {
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "webpack": "^1.13.2"
+  }
+}
