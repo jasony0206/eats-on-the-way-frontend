@@ -10,8 +10,8 @@ class App extends React.Component {
   }
 }
 
-var RestaurantPanel = React.createClass({
-  render: function() {
+class RestaurantPanel extends React.Component {
+  render() {
     var categories = this.props.categories.join(', ');
 
     return (
@@ -36,10 +36,10 @@ var RestaurantPanel = React.createClass({
       </div>
     );
   }
-});
+}
 
-var RestaurantList = React.createClass({
-  render: function() {
+class RestaurantList extends React.Component {
+  render() {
     var restaurantNodes = this.props.data.map(function(restaurant){
       return (
         <RestaurantPanel key={restaurant.name}
@@ -62,10 +62,10 @@ var RestaurantList = React.createClass({
       </div>
     );
   }
-});
+}
 
-var SearchBox = React.createClass({
-  render: function() {
+class SearchBox extends React.Component {
+  render() {
     return(
       <div className="searchBox panel panel-default">
         <form className="form-horizontal">
@@ -85,10 +85,10 @@ var SearchBox = React.createClass({
       </div>
     );
   }
-});
+}
 
-var DataBox = React.createClass({
-  render: function() {
+class DataBox extends React.Component {
+  render() {
     return(
       <div className="dataBox">
         <SearchBox />
@@ -96,7 +96,7 @@ var DataBox = React.createClass({
       </div>
     );
   }
-})
+}
 
 
 render(<DataBox data={data}/>, document.getElementById('data-box'));
