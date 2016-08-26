@@ -42,9 +42,11 @@ export default class RestaurantPanel extends React.Component {
                   Arrive at destination: 1:45PM</p>
                 </div>
                 <div className="col-sm-5 travel-additional">
-                  <button type="button" className="btn btn-primary route-button">
-                    View route on Google
-                  </button>
+                  <a href="https://www.google.com/maps/dir/San+Jose,+CA/Los+Angeles,+CA/" target="_blank">
+                    <button type="button" className="btn btn-primary route-button">
+                      View directions on Google
+                    </button>
+                  </a>
                 </div>
               </div>
             </Well>
