@@ -10,8 +10,12 @@
   <body>
     <div id="data-box"></div>
     <div id="map"></div>
-    <script src="public/bundle.js" type="text/javascript"></script>
-    <script src="app/map.js"></script>
+    <script type='text/javascript'>
+      mapObject = false;
+    </script>
+    <script src="public/react.entry.js" type="text/javascript"></script>
+    <script src="app/init_map.js"></script>
+    <script src="public/js.entry.js" type="text/javascript"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5K8PEIVxny-BofWrL_soM4DCIFACRY3Y&signed_in=true&callback=initializeMap"></script>
   </body>

@@ -1,20 +1,3 @@
-function initializeMap() {
-  var mapCanvas = document.getElementById('map');
-  var losAngeles = {lat: 34.05, lng: -118.25};
-  var italy = {lat: 41.90, lng: 12.48};
-
-  var mapOptions = {
-    center: italy,
-    zoom: 2,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
-
-  map = new google.maps.Map(mapCanvas, mapOptions);
-  markers = [];
-
-  // getEarthquakeData("1.0", "hour");
-}
-
 function putMarker(latitude, longitude) {
   var marker = new google.maps.Marker({
     position: {lat: latitude, lng: longitude},
@@ -30,3 +13,6 @@ function removeMarkers() {
     markers[i].setMap(null);
   }
 }
+
+// Must wait until initMap is called before trying to access mapObject
+// setTimeout(function() {console.log(mapObject)},3000);
