@@ -27,8 +27,9 @@ export default class RestaurantPanel extends React.Component {
             <div className="col-sm-6 travel-summary">
               <p><strong>{this.props.total_travel.duration.text}</strong>&nbsp;&nbsp;
               <span className="text-muted">({this.props.total_travel.distance.text})</span> total</p>
-              <p>{this.props.to_restaurant.duration.text} to there</p>
-              <p>{this.props.from_restaurant.duration.text} from there</p>
+              <p>{this.props.to_restaurant.duration.text} to there<br></br>
+              {this.props.from_restaurant.duration.text} from there</p>
+              <p className="route-details-text">more details</p>
             </div>
           </div>
         </div>

@@ -39,3 +39,8 @@
 .route-button {
   white-space: normal;
 }
+
+.route-details-text {
+  color: #448AFF;
+  font-weight: bold;
+}
