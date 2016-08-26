@@ -99,4 +99,4 @@ var DataBox = React.createClass({
 })
 
 
-render(<DataBox data={data}/>, document.getElementById('app'));
+render(<DataBox data={data}/>, document.getElementById('data-box'));
