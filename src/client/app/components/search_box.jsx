@@ -8,13 +8,13 @@ export default class SearchBox extends React.Component {
           <div className="form-group">
             <label htmlFor="originInput" className="col-sm-3 control-label">Origin</label>
             <div className="col-sm-9">
-              <input type="text" className="form-control" id="originInput" placeholder="Disneyland"/>
+              <input type="text" className="controls form-control" id="originInput" placeholder="Enter starting location"/>
             </div>
           </div>
           <div className="form-group">
             <label htmlFor="destinationInput" className="col-sm-3 control-label">Destination</label>
             <div className="col-sm-9">
-              <input type="text" className="form-control" id="destinationInput" placeholder="Universal Studios"/>
+              <input type="text" className="form-control" id="destinationInput" placeholder="Enter destination"/>
             </div>
           </div>
         </form>
