@@ -35,3 +35,7 @@
   bottom: 0px;
   overflow-y: auto;
 }
+
+.route-button {
+  white-space: normal;
+}
