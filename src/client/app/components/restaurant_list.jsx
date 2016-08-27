@@ -14,7 +14,8 @@ export default class RestaurantList extends React.Component {
                          rating_img_url={restaurant.rating_img_url}
                          total_travel={restaurant.total_travel}
                          to_restaurant={restaurant.to_restaurant}
-                         from_restaurant={restaurant.from_restaurant}>
+                         from_restaurant={restaurant.from_restaurant}
+                         added_travel={restaurant.added_travel}>
         </RestaurantPanel>
       );
     });

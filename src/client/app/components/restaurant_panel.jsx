@@ -38,9 +38,7 @@ export default class RestaurantPanel extends React.Component {
             <Well>
               <div className="row">
                 <div className="col-sm-7 travel-additional">
-                  <p>Adds X min to direct route<br/>
-                  Arrive at restaurant: 12:30PM<br/>
-                  Arrive at destination: 1:45PM</p>
+                  <p>Adds <strong>{this.props.added_travel.duration.text}</strong> to direct route</p>
                 </div>
                 <div className="col-sm-5 travel-additional">
                   <a href="https://www.google.com/maps/dir/San+Jose,+CA/Los+Angeles,+CA/" target="_blank">
