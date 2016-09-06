@@ -10,7 +10,6 @@ export default class DataBox extends React.Component {
   }
 
   updateList(newData) {
-    console.log("update list!");
     this.setState({data: newData});
   }
 

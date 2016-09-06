@@ -5,19 +5,20 @@ export default class SearchBox extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.BACKEND_URL = "https://eats-on-the-way-api.herokuapp.com/search?origin=Hammer+Museum,+10899+Wilshire+Blvd,+Los+Angeles&destination=424+kelton+ave+los+angeles";
+    this.BACKEND_URL = "https://eats-on-the-way-api.herokuapp.com/search?";
   }
 
   handleClick() {
     var origin = document.getElementById('originInput').value;
     var destination = document.getElementById('destinationInput').value;
+    var queryString = `origin=${encodeURI(origin)}&destination=${encodeURI(destination)}`;
+    var fullURI = `${this.BACKEND_URL}${queryString}`;
 
     $.ajax({
-      url: this.BACKEND_URL,
+      url: fullURI,
       dataType: 'json',
       cache: false,
       success: function(data) {
-        console.log("callback!");
         this.props.updateList(data);
       }.bind(this),
       error: function(xhr, status, err) {
