@@ -1,33 +1,25 @@
 import React from 'react';
 import SearchBox from './search_box.jsx';
 import RestaurantList from './restaurant_list.jsx';
-import $ from 'jquery';
 
-var DataBox = React.createClass({
-  getInitialState: function() {
-    return {data: []};
-  },
-  componentDidMount: function() {
-    $.ajax({
-      url: this.props.url,
-      dataType: 'json',
-      cache: false,
-      success: function(data) {
-        this.setState({data: data});
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    });
-  },
-  render: function() {
+export default class DataBox extends React.Component {
+  constructor() {
+    super();
+    this.state = {data:[]};
+    this.updateList = this.updateList.bind(this);
+  }
+
+  updateList(newData) {
+    console.log("update list!");
+    this.setState({data: newData});
+  }
+
+  render() {
     return(
       <div className="dataBox">
-        <SearchBox />
+        <SearchBox updateList={this.updateList}/>
         <RestaurantList data={this.state.data}/>
       </div>
     );
   }
-});
-
-export default DataBox;
+}

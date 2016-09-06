@@ -8,7 +8,7 @@
   padding-right: 25px;
   position: fixed;
   width: inherit;
-  height: 115px;
+  height: 160px;
   background-color: #d32323;
   color: white;
 }
@@ -31,7 +31,7 @@
 .restaurantList {
   position: fixed;
   width: inherit;
-  top: 115px;
+  top: 160px;
   bottom: 0px;
   overflow-y: auto;
 }
