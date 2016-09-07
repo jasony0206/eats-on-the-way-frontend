@@ -11,6 +11,7 @@ export default class DataBox extends React.Component {
 
   updateList(newData) {
     this.setState({data: newData});
+    this.putMarkersOnMap(newData);
   }
 
   displayRouteOnMap(origin, destination) {
@@ -25,6 +26,18 @@ export default class DataBox extends React.Component {
         directionsDisplay.setDirections(result);
       }
     });
+  }
+
+  putMarkersOnMap(newData) {
+    newData.restaurants.map(function(restaurant) {
+        var marker = new google.maps.Marker({
+          position: {lat: restaurant.location.latitude, lng: restaurant.location.longitude},
+          map: mapObject
+        });
+
+        markers.push(marker);
+      }
+    );
   }
 
   render() {
