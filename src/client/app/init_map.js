@@ -110,4 +110,8 @@ function initializeMap() {
     infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
     infowindow.open(mapObject, destinationMarker);
   });
+
+  // Initialize directions renderer
+  directionsDisplay = new google.maps.DirectionsRenderer();
+  directionsDisplay.setMap(mapObject);
 }

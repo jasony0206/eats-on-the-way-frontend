@@ -20,6 +20,7 @@ export default class SearchBox extends React.Component {
       cache: false,
       success: function(data) {
         this.props.updateList(data);
+        this.props.displayRouteOnMap(origin, destination);
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
