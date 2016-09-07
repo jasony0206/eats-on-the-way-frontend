@@ -4,7 +4,8 @@ import RestaurantPanel from './restaurant_panel.jsx';
 export default class RestaurantList extends React.Component {
   render() {
     var restaurantNodes = null;
-    if (this.props.data.restaurants) {
+    var data = this.props.data;
+    if (data.restaurants) {
       restaurantNodes = this.props.data.restaurants.map(function(restaurant){
         return (
           <RestaurantPanel key={restaurant.name}
@@ -17,7 +18,10 @@ export default class RestaurantList extends React.Component {
                            total_travel={restaurant.total_travel}
                            to_restaurant={restaurant.to_restaurant}
                            from_restaurant={restaurant.from_restaurant}
-                           added_travel={restaurant.added_travel}>
+                           added_travel={restaurant.added_travel}
+                           origin={data.start_location.address}
+                           destination={data.end_location.address}
+                           address={restaurant.location.address}>
           </RestaurantPanel>
         );
       });

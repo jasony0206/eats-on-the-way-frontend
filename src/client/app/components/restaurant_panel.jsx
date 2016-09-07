@@ -8,6 +8,13 @@ export default class RestaurantPanel extends React.Component {
     this.state = {};
   }
 
+  formatMapsDirectionsLink(origin, waypoint, destination) {
+    var endpoint = "https://www.google.com/maps/dir/"
+    var queryString = `${encodeURI(origin)}/${encodeURI(waypoint)}/${encodeURI(destination)}`;
+    var fullURI = `${endpoint}${queryString}`;
+    return fullURI;
+  }
+
   render() {
     var categories = this.props.categories.join(', ');
 
@@ -41,7 +48,7 @@ export default class RestaurantPanel extends React.Component {
                   <p>Adds <strong>{this.props.added_travel.duration.text}</strong> to direct route</p>
                 </div>
                 <div className="col-sm-5 travel-additional">
-                  <a href="https://www.google.com/maps/dir/San+Jose,+CA/Los+Angeles,+CA/" target="_blank">
+                  <a href={this.formatMapsDirectionsLink(this.props.origin, this.props.address, this.props.destination)} target="_blank">
                     <button type="button" className="btn btn-primary route-button">
                       View directions on Google
                     </button>
