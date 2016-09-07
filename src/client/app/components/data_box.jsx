@@ -29,6 +29,8 @@ export default class DataBox extends React.Component {
   }
 
   putMarkersOnMap(newData) {
+    this.removeMarkers();
+
     newData.restaurants.map(function(restaurant) {
         var marker = new google.maps.Marker({
           position: {lat: restaurant.location.latitude, lng: restaurant.location.longitude},
@@ -38,6 +40,12 @@ export default class DataBox extends React.Component {
         markers.push(marker);
       }
     );
+  }
+
+  removeMarkers() {
+    markers.forEach(function(marker) {
+      marker.setMap(null);
+    });
   }
 
   render() {
