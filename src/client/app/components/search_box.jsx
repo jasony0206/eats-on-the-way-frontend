@@ -32,7 +32,7 @@ export default class SearchBox extends React.Component {
 
   render() {
     return(
-      <div className="searchBox panel panel-default">
+      <div className="searchBox panel panel-override panel-default">
         <form className="form-horizontal">
           <div className="form-group">
             <label htmlFor="originInput" className="col-sm-3 control-label">Origin</label>

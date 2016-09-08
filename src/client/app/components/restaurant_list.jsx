@@ -1,6 +1,5 @@
 import React from 'react';
 import RestaurantPanel from './restaurant_panel.jsx';
-import 'react-spinner';
 
 export default class RestaurantList extends React.Component {
   render() {
@@ -26,18 +25,33 @@ export default class RestaurantList extends React.Component {
           </RestaurantPanel>
         );
       });
+
+      return(
+        <div className="restaurantList">
+          {restaurantNodes}
+        </div>
+      );
     } else if (this.props.loading) {
       return (
         <div className="restaurantList">
           <div className="loader"></div>
         </div>
       );
+    } else {
+      return (
+        <div className="restaurantList">
+          <div className="intro panel panel-default">
+            <h2><strong>On The Way</strong></h2>
+            <h4>Search restaurants and more along your travel route!</h4><br/>
+            <p>Tell me where you are traveling from and to, and find out which restaurants on the way are highly rated on Yelp.
+            Search results will also include direct links to Yelp pages as well as Google Maps directions.</p>
+            <p>If you have any feedback or comments, please contact me through <a href="http://jasony0206.github.io" target="_blank">here</a>.</p>
+            <div className="footer text-center">
+              Copyright &copy; 2016 Jason Yoon
+            </div>
+          </div>
+        </div>
+      );
     }
-
-    return(
-      <div className="restaurantList">
-        {restaurantNodes}
-      </div>
-    );
   }
 }

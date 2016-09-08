@@ -5,7 +5,7 @@ function initializeMap() {
 
   var mapOptions = {
     center: losAngeles,
-    zoom: 2,
+    zoom: 8,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
 

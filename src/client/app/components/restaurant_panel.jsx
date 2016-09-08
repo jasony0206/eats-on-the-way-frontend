@@ -19,7 +19,7 @@ export default class RestaurantPanel extends React.Component {
     var categories = this.props.categories.join(', ');
 
     return (
-      <div className="restaurantPanel panel panel-default">
+      <div className="restaurantPanel panel panel-override panel-default">
         <div onClick={ ()=> this.setState({ open: !this.state.open })}>
           <h5 className="restaurantName"><strong>{this.props.name}</strong></h5>
           <div className="row">
