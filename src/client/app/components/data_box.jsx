@@ -5,12 +5,13 @@ import RestaurantList from './restaurant_list.jsx';
 export default class DataBox extends React.Component {
   constructor() {
     super();
-    this.state = {data:[]};
+    this.state = {data:[], loading: false};
     this.updateList = this.updateList.bind(this);
+    this.setLoading = this.setLoading.bind(this);
   }
 
   updateList(newData) {
-    this.setState({data: newData});
+    this.setState({data: newData, loading: false});
     this.putMarkersOnMap(newData);
   }
 
@@ -48,11 +49,18 @@ export default class DataBox extends React.Component {
     });
   }
 
+  setLoading(newLoadingValue) {
+    this.setState({data: [], loading: newLoadingValue}, function() {
+        console.log("loading: " + this.state.loading);
+      }
+    );
+  }
+
   render() {
     return(
       <div className="dataBox">
-        <SearchBox updateList={this.updateList} displayRouteOnMap={this.displayRouteOnMap}/>
-        <RestaurantList data={this.state.data}/>
+        <SearchBox updateList={this.updateList} displayRouteOnMap={this.displayRouteOnMap} setLoading={this.setLoading}/>
+        <RestaurantList data={this.state.data} loading={this.state.loading}/>
       </div>
     );
   }

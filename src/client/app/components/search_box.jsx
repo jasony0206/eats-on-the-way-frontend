@@ -13,12 +13,14 @@ export default class SearchBox extends React.Component {
     var destination = document.getElementById('destinationInput').value;
     var queryString = `origin=${encodeURI(origin)}&destination=${encodeURI(destination)}`;
     var fullURI = `${this.BACKEND_URL}${queryString}`;
+    this.props.setLoading(true);
 
     $.ajax({
       url: fullURI,
       dataType: 'json',
       cache: false,
       success: function(data) {
+        this.props.setLoading(false);
         this.props.updateList(data);
         this.props.displayRouteOnMap(origin, destination);
       }.bind(this),

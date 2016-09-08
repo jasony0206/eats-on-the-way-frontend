@@ -1,5 +1,6 @@
 import React from 'react';
 import RestaurantPanel from './restaurant_panel.jsx';
+import 'react-spinner';
 
 export default class RestaurantList extends React.Component {
   render() {
@@ -25,6 +26,12 @@ export default class RestaurantList extends React.Component {
           </RestaurantPanel>
         );
       });
+    } else if (this.props.loading) {
+      return (
+        <div className="restaurantList">
+          <div className="loader"></div>
+        </div>
+      );
     }
 
     return(
