@@ -1,11 +1,13 @@
 import React from 'react';
 import RestaurantPanel from './restaurant_panel.jsx';
+import $ from 'jquery';
 
 export default class RestaurantList extends React.Component {
   render() {
     var restaurantNodes = null;
     var data = this.props.data;
     if (data.restaurants) {
+      // Received query results, display properly
       restaurantNodes = this.props.data.restaurants.map(function(restaurant){
         return (
           <RestaurantPanel key={restaurant.name}
@@ -32,12 +34,27 @@ export default class RestaurantList extends React.Component {
         </div>
       );
     } else if (this.props.loading) {
+      // Query is executing, show loading spinner
       return (
         <div className="restaurantList">
           <div className="loader"></div>
         </div>
       );
     } else {
+      // Stand by for the first query
+      // Wake up heroku backened by hitting the endpoint beforehand
+      var URL = "https://eats-on-the-way-api.herokuapp.com"
+      $.ajax({
+        url: URL,
+        cache: false,
+        success: function(data) {
+          console.log("endpoint is awake!");
+        }.bind(this),
+        error: function(xhr, status, err) {
+          console.error(URL, status, err.toString());
+        }.bind(this)
+      });
+
       return (
         <div className="restaurantList">
           <div className="intro panel panel-default">
