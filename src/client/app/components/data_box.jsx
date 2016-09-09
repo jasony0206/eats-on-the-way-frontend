@@ -50,10 +50,7 @@ export default class DataBox extends React.Component {
   }
 
   setLoading(newLoadingValue) {
-    this.setState({data: [], loading: newLoadingValue}, function() {
-        console.log("loading: " + this.state.loading);
-      }
-    );
+    this.setState({data: [], loading: newLoadingValue});
   }
 
   render() {
