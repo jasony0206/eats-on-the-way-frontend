@@ -38,6 +38,7 @@ export default class RestaurantList extends React.Component {
       return (
         <div className="restaurantList">
           <div className="loader"></div>
+          <h4 className="text-center text-muted">This might take a few seconds...</h4>
         </div>
       );
     } else {
