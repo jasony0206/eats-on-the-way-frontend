@@ -44,7 +44,7 @@ export default class RestaurantList extends React.Component {
     } else {
       // Stand by for the first query
       // Wake up heroku backened by hitting the endpoint beforehand
-      var URL = "https://eats-on-the-way-api.herokuapp.com"
+      var URL = "https://on-the-way-api.herokuapp.com"
       $.ajax({
         url: URL,
         cache: false,

@@ -5,7 +5,7 @@ export default class SearchBox extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.BACKEND_URL = "https://eats-on-the-way-api.herokuapp.com/search?";
+    this.BACKEND_URL = "https://on-the-way-api.herokuapp.com/search?";
   }
 
   handleClick() {
